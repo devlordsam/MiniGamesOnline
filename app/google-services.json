@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "616691715696",
+    "project_id": "mini-games-online-8bdd6",
+    "storage_bucket": "mini-games-online-8bdd6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616691715696:android:87145d3aa4f3eeeeb42eb5",
+        "android_client_info": {
+          "package_name": "com.lordsam.minigamesonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616691715696-l9793vmitk0h8004uj4gc3enptqf8gmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTOUtKPnXdQp_6F97DvdtSXPuwr5qQDLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616691715696-l9793vmitk0h8004uj4gc3enptqf8gmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

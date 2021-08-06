@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mini Games Online</string>
+    <string name="click_back">Please, click back again!</string>
+    <string name="please_wait">Please, wait…</string>
+    <string name="image_logo">Image Logo</string>
+    <string name="image_google">Image Google</string>
+    <string name="google">Google</string>
+    <string name="username">Username</string>
+    <string name="submit">Submit</string>
+    <string name="game_name">Game Name</string>
+    <string name="image">image</string>
+    <string name="add">Add</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="vs">VS</string>
+    <string name="rock">Rock</string>
+    <string name="paper">Paper</string>
+    <string name="scissor">Scissor</string>
+    <string name="player">Player</string>
+    <string name="send">Send</string>
+</resources>

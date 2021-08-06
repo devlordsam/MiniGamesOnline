@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RPSActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llAddPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/llPlayers">
+
+        <EditText
+            android:id="@+id/etAddPlayer"
+            android:layout_margin="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:textColor="@color/teal_200"/>
+
+        <Button
+            android:id="@+id/btnAddPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:layout_margin="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llAddPlayer"
+        app:layout_constraintBottom_toTopOf="@id/llPlayers">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvRPS"/>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/llPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/player_1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/teal_700"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/player_2"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/teal_700"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPlayers2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llPlayers"
+        app:layout_constraintVertical_bias="0.096">
+
+        <ImageView
+            android:id="@+id/ivPlayer1"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:src="@drawable/scissor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="@string/vs"
+            android:textColor="@color/teal_700"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivPlayer2"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:src="@drawable/scissor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPlayers3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llPlayers2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnRock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="@string/rock"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnPaper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="@string/paper"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnScissor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="@string/scissor"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
